@@ -13,11 +13,14 @@ public class Prjava01 {
     /**
      * @par the command line arguments
      */     /* * To change this template, choose Tools | Templates * and open the template in the editor. */
-     public static void main(String[] args) throws IOException {       
+     public static void main(String[] args) throws IOException { 
+        
       File f = new File("fitxer.html");        
-      try (BufferedWriter bw = new BufferedWriter(new FileWriter(f))) {          
+      try (BufferedWriter bw = new BufferedWriter(new FileWriter(f))) {  
+          
           bw.write("<html>");
-          bw.newLine();            
+          bw.newLine();           
+          bw.write("    <h1>DAW2 m08uf4pr2</h1>");bw.newLine();
           bw.write("<head>");bw.newLine();          
           bw.write("<title>");bw.newLine();           
           bw.write("Nova p&agrave;gina  web");
